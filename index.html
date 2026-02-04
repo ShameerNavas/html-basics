@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1>To‑do List</h1>
+
+    <form id="addForm" class="add-form">
+      <input id="newTask" type="text" placeholder="Add a new task" aria-label="New task name" />
+      <button type="submit">Add</button>
+    </form>
+
+    <section class="tasks">
+      <ul id="tasksList" class="tasks-list"></ul>
+    </section>
+
+    <footer class="footer">Open this file in a browser to use the UI. Tasks are persisted to localStorage.</footer>
+  </main>
+
+  <!-- existing logic; exposes loadTasks/saveTasks/addTask/completeTask/deleteTask/tasks when loaded as a plain script -->
+  <script src="todo.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>

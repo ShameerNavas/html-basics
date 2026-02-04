@@ -1,0 +1,17 @@
+:root{--bg:#f7f7fb;--card:#ffffff;--accent:#0066cc;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.app{max-width:640px;margin:48px auto;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.9));border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.08)}
+h1{margin:0 0 12px;font-size:1.6rem}
+.add-form{display:flex;gap:8px;margin-bottom:16px}
+.add-form input{flex:1;padding:8px 12px;border:1px solid #ddd;border-radius:6px;font-size:1rem}
+.add-form button{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.tasks-list{list-style:none;padding:0;margin:0}
+.tasks-list li{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-bottom:1px solid #f0f0f0}
+.tasks-list li.done .name{text-decoration:line-through;color:var(--muted)}
+.tasks-list li .name{flex:1}
+.controls{display:flex;gap:8px;margin-left:12px}
+.controls button{padding:6px 8px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.controls button.delete{border-color:#f2c0c0;background:#fff4f4}
+.empty{padding:14px;color:var(--muted);text-align:center}
+.footer{margin-top:16px;font-size:0.9rem;color:var(--muted)}
