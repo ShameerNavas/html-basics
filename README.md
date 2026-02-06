@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple Console To-Do List
 
 This is a very small JavaScript to-do list manager that runs in the console. It stores tasks in an in-memory array and optionally persists them to `localStorage` when used in a browser.
@@ -51,3 +52,7 @@ Notes:
 - The demo run when calling `node todo.js` demonstrates the functions.
 
 Feel free to adapt this file to add interactive CLI input, file-based persistence for Node, or a small web UI.
+=======
+# html-basics
+HTML concepts and structure 
+>>>>>>> 9f778b6152d3ec37a6dece3de2a80530aec6e01b
