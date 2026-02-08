@@ -1,39 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>To-do List</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>HTML Basics</title>
 </head>
 <body>
-  <main class="app">
-    <h1>To‑do List</h1>
 
-    <form id="addForm" class="add-form">
-      <input id="newTask" type="text" placeholder="Add a new task" aria-label="New task name" />
-      <button type="submit">Add</button>
-    </form>
+    <header>
+        <h1>HTML Basics</h1>
+        <p>My first HTML project </p>
+    </header>
 
-    <section>
-    <h2>Topics Learned</h2>
-    <ul>
-        <li>HTML structure</li>
-        <li>Headings and paragraphs</li>
-        <li>Forms and inputs</li>
-    </ul>
-</section>
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>
+                This page is created using only HTML to demonstrate
+                basic structure.
+            </p>
+        </section>
 
+        <section>
+            <h2>Contact Form</h2>
 
-    <footer class="footer">Open this file in a browser to use the UI. Tasks are persisted to localStorage.</footer>
-  </main>
+            <form>
+                <label>Full Name:</label><br>
+                <input type="text" placeholder="Enter your name"><br><br>
 
-  <!-- existing logic; exposes loadTasks/saveTasks/addTask/completeTask/deleteTask/tasks when loaded as a plain script -->
-  <script src="todo.js"></script>
-  <script src="ui.js"></script>
-  <p>
-    <a href="html-basics.html">View pure HTML version</a>
-</p>
+                <label>Email:</label><br>
+                <input type="email" placeholder="Enter your email"><br><br>
+
+                <label>Message:</label><br>
+                <textarea rows="5" placeholder="Your message"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>HTML 1</p>
+    </footer>
 
 </body>
 </html>
