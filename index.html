@@ -23,12 +23,13 @@
         <section>
             <h2>Contact Form</h2>
 
-            <form>
+            <form onsubmit="return validateForm()">
+
                 <label>Full Name:</label><br>
-                <input type="text" placeholder="Enter your name"><br><br>
+                <input type="text" id="name" placeholder="Enter your name"><br><br>
 
                 <label>Email:</label><br>
-                <input type="email" placeholder="Enter your email"><br><br>
+                <input type="email" id="email" placeholder="Enter your email"><br><br>
 
                 <label>Message:</label><br>
                 <textarea rows="5" placeholder="Your message"></textarea><br><br>
@@ -40,6 +41,7 @@
 
     
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
 
 </body>
